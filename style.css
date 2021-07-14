@@ -429,10 +429,15 @@ footer{
     }
     .players{
         display: grid;
-        margin-left: -65%;
+        margin-left: -40%;
         grid-template-columns: repeat(1, 0.4fr);
         grid-row-gap: 24px;
         
+    }
+    .player-img{
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
     }
     .player-info>p{
         color: gray;
