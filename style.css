@@ -430,6 +430,7 @@ footer{
     .players{
         width: 100%;
         display: grid;
+        padding-left: -10%;
         margin-left: -40%;
         grid-template-columns: repeat(1, 0.5fr);
         grid-row-gap: 24px;
