@@ -429,10 +429,15 @@ footer{
     }
     .players{
         display: grid;
-        margin-left: -50%;
+        margin-left: -80%;
         grid-template-columns: repeat(1, 0.2fr);
         grid-row-gap: 24px;
         
+    }
+    .player-info>p{
+        color: gray;
+        font-weight: normal;
+        font-size: smaller;
     }
     
     /* bottom parts */
@@ -460,7 +465,7 @@ footer{
     
     .bottom-image img{
         margin-top: 55px;
-        padding-left: -27x;
+        padding-left: -40px;
         margin-left: 8px;
         width: 300px;
         height: 280px;
