@@ -428,8 +428,8 @@ footer{
         
     }
     .players{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
         
     }
     
@@ -468,8 +468,7 @@ footer{
     /* bonus parts */
 
     #offical-song{
-        display: none;
-        width: 100%;
+        display: flex;
     }
 /* footer part */
     .footer-img{
