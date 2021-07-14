@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+/* header and navigation styles */
+
+.header{
+    height: 677px;
+    background-color: #2D25A0;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 42px;
+    
+}
+.bars{
+    display: none;
+}
+.nav-links  a{
+    color: whitesmoke;
+    margin-right: 36px;
+    text-decoration: none;
+}
+.Login-button{
+    margin-right: 36px;
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #E02C6D;
+}
+.fill{
+    padding-right: 5px;
+}
+
+
+/* copa America Styling */
+.copa-image{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 50px;
+}
+.top-section-title{
+    margin-top: -120px;
+    font-weight:bolder;
+    font-size: 2rem;
+    color: white;
+    line-height: 27px;
+    
+}
+.top-section-title>a, .bottom-title>a{
+    margin-top: 10px;
+    background-color: #E02C6D;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.fas{
+    margin-left: 5px;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0px) rotate(0);
+    }
+    to{
+        transform: translateX(200px) rotate(45deg);
+    }
+}
+.header:hover .top-image{
+    animation: slide 2s linear 0s alternate infinite;
+}
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+.container{
+    margin: 70px ;
+    
+}
+
+
+/* player design */
+
+.players{
+    padding-left: 180px;
+    display: grid;
+    grid-template-columns: repeat(3,0.3fr);
+    grid-row-gap: 27px;
+    /* grid-column-gap: px; */
+}
+
+.player{
+    padding: -50px;
+    width: 330px;
+    height: 470px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img{
+    text-align: center;
+    padding-top: 10px;
+}
+.player-info{
+    padding: 0 15px;
+    margin-top: -15px;
+    
+}
+.player-info>p{
+    color: gray;
+    font-weight: normal;
+}
+
+/* bottom part design */
+.copa-higlight{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 155px;
+}
+.bottom-title{
+    /* margin-top: -10px; */
+    font-size: 1.7rem;
+    color: black;
+    line-height: 27px;
+    margin-left: 180px;
+    
+}
+.bottom-title>p{
+    /* margin-top: -120px; */
+    font-size: 1rem;
+    color: gray;
+    line-height: 28px;
+    margin-right: 150px;
+    
+}
+
+.bottom-image{
+    padding-right: 80px;
+    
+}
+
+.photo-gallery{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.photo-gallery h2{
+    color: brown;
+}
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.photo-frame{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+}
+.photo img{
+    width: 100%;
+}
+.photo-detail{
+    display: none;
+    position: absolute;
+    width: 300px;
+    top:0;
+}
+.photo-detail p{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#official-song{
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
+
+
+/* footer design */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.footer-img{
+    margin-top: 100px;
+    background-image: url('images/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 483px;
+    height: 213px;
+}
+.icons{
+    margin-top: -80px;
+    box-shadow:0px 0px 0px( rgba(0, 0, 0, 0.15));
+    
+}
+.media{
+    /* height: 100px; */
+    width: 50px;
+    color: gray;
+}
+.icons p{
+    color: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: -20px;
+}
+
+
+/* for Tablet or similar devices screen=(481px - 960px) */
+@media only screen and (min-width:485px) and (max-width: 960px) {
+    /* common styles */
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* header and nav part */
+    .header{
+        /* width: 1440px; */
+        height: 633px;
+        
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .nav-links a{
+        margin-left: 15px;
+    }
+    
+    .Login-button{
+        margin-right: 20px;
+    }
+    
+    /* copa America styles */
+    .copa-image{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .top-section-title{
+        margin-top: 10%;
+        margin-left: 15px;
+        font-size: 1.5rem;
+        line-height: 16px;
+        
+    }
+    .top-section-title> a{
+        margin-top: 10px;
+        padding: 9px;
+    }
+    
+    @keyframes skewed{
+        from{
+            transform: skew(0deg, 0deg);
+        }
+        to{
+            transform: scale(45deg, 45deg);
+        }
+    }
+    .top-image img{
+        margin-top: 80px;
+        margin-left: 15px;
+        width: 330px;
+        height: 270px;
+        animation: skewed 1s ease-in 0s alternate infinite ;
+    }
+    
+    /* player styles */
+    .container{
+        margin:47px ;
+        
+    }
+    .players{
+        display: grid;
+        margin-left: -15%;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 24px;
+        
+        /* grid-column-gap: px; */
+    }
+    .player{
+        width: 320px;
+        height: 470px;
+        /* border: 1px solid black; */
+        background-color: #fff;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* bottom parts  */
+    .copa-higlight{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .bottom-title{
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: 5px;
+        
+    }
+    .bottom-title>p{
+        /* margin-top: -120px; */
+        font-size: 1rem;
+        color: gray;
+        line-height: 25px;
+        margin-right:1px;
+        
+    }
+    
+    .bottom-image img{
+        margin-top: 55px;
+        padding-left: -27x;
+        margin-left: 8px;
+        width: 780px;
+        height: 530px;
+        
+    }
+    /* bonus parts */
+    #official-song{
+        display: block;
+        text-align: center;
+        margin-left: -50px;
+    }
+    /* footer part */
+    .footer-img{
+        margin-top: 40px;
+        margin-left: 10px;
+        background-image: url('images/Logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 330px;
+        height: 200px;
+
+    }
+    .icons{
+        /* margin-top: -80px; */
+        margin-left: 80px;
+        /* padding-left:60px; */
+        margin-bottom: 80px;
+        
+    }
+    
+} 
+
+/* media query for mobile*/
+
+/* screen 480px */
+@media only screen and (max-width: 480px) {
+
+/* common styles  */
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* head and nav  */
+    .header{
+        height: 695px;
+        
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+    }
+    .bars{
+        margin-top: -2px;
+        margin-left: 15px;
+        display: block;
+        height: 24px;
+        width: 24px;
+        color: #ffff;
+    }
+    .nav-links a{
+        display: none;
+    }
+    .Login-button{
+        margin-right: 20px;
+    }
+    
+    /* copa America styles */
+    .copa-image{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .top-section-title{
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 1.5rem;
+        line-height: 20px;
+        
+    }
+    .top-section-title>a{
+        margin-top: 5px;
+        padding: 9px;
+    }
+    
+    @keyframes turn{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(60deg);
+        }
+    }
+    .top-image img{
+        margin-top: 70px;
+        margin-left: 55px;
+        width: 350px;
+        height: 280px;
+        animation: turn 1s ease-in-out 0s alternate infinite;
+        
+    }
+    /* player styles */
+    .container{
+        margin:47px ;
+        
+    }
+    .players{
+        display: grid;
+        margin-left: -38%;
+        grid-template-columns: repeat(1,0.3fr);
+        grid-row-gap: 24px;
+        
+        /* grid-column-gap: px; */
+    }
+    
+    /* bottom parts */
+    .copa-higlight{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .bottom-title{
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: 5px;
+        
+    }
+    .bottom-title>p{
+        /* margin-top: -120px; */
+        font-size: 1rem;
+        color: gray;
+        line-height: 25px;
+        margin-right:1px;
+        
+    }
+    
+    .bottom-image img{
+        margin-top: 55px;
+        padding-left: -27x;
+        margin-left: 8px;
+        width: 400px;
+        height: 280px;
+        
+    }
+
+    /* bonus parts */
+    #offical-song{
+        display: none;
+    }
+/* footer part */
+    .footer-img{
+        margin-top: 40px;
+        margin-left: 10px;
+        background-image: url('images/Logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 240px;
+        height: 160px;
+    }
+    .icons{
+        margin-left: 30px;
+        padding-left:20px;
+        
+    }
+    
+} 
