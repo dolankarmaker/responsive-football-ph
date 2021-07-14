@@ -428,9 +428,10 @@ footer{
         
     }
     .players{
+        width: 100%;
         display: grid;
         margin-left: -40%;
-        grid-template-columns: repeat(1, 0.4fr);
+        grid-template-columns: repeat(1, 0.3fr);
         grid-row-gap: 24px;
         
     }
