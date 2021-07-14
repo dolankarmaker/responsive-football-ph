@@ -428,8 +428,10 @@ footer{
         
     }
     .players{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        margin-left: -50%;
+        grid-template-columns: repeat(1, 0.2fr);
+        grid-row-gap: 24px;
         
     }
     
@@ -460,15 +462,18 @@ footer{
         margin-top: 55px;
         padding-left: -27x;
         margin-left: 8px;
-        width: 400px;
+        width: 300px;
         height: 280px;
         
     }
 
     /* bonus parts */
+    .photo-gallery{
+        display: none;
+    }
 
     #offical-song{
-        display: flex;
+        display: none;
     }
 /* footer part */
     .footer-img{
