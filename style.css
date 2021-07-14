@@ -34,7 +34,7 @@
 }
 
 
-/* copa America Styling */
+/* Main container styling */
 .copa-image{
     display: flex;
     justify-content:space-evenly ;
@@ -91,14 +91,12 @@ body{
     display: grid;
     grid-template-columns: repeat(3,0.3fr);
     grid-row-gap: 27px;
-    /* grid-column-gap: px; */
 }
 
 .player{
     padding: -50px;
     width: 330px;
     height: 470px;
-    /* border: 1px solid black; */
     background-color: #fff;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
@@ -124,7 +122,6 @@ body{
     margin-top: 155px;
 }
 .bottom-title{
-    /* margin-top: -10px; */
     font-size: 1.7rem;
     color: black;
     line-height: 27px;
@@ -132,7 +129,6 @@ body{
     
 }
 .bottom-title>p{
-    /* margin-top: -120px; */
     font-size: 1rem;
     color: gray;
     line-height: 28px;
@@ -224,7 +220,7 @@ footer{
 }
 
 
-/* for Tablet or similar devices screen=(481px - 960px) */
+/* for Tablet or similar devices screen(481px - 960px) */
 @media only screen and (min-width:485px) and (max-width: 960px) {
     /* common styles */
     html,body{
@@ -232,9 +228,8 @@ footer{
         overflow-x: hidden;
     }
     
-    /* header and nav part */
+    /* header and navigation part */
     .header{
-        /* width: 1440px; */
         height: 633px;
         
     }
@@ -250,7 +245,7 @@ footer{
         margin-right: 20px;
     }
     
-    /* copa America styles */
+    /* main container styles */
     .copa-image{
         display: flex;
         align-items: flex-start;
@@ -294,13 +289,10 @@ footer{
         margin-left: -15%;
         grid-template-columns: repeat(2,1fr);
         grid-row-gap: 24px;
-        
-        /* grid-column-gap: px; */
     }
     .player{
         width: 320px;
         height: 470px;
-        /* border: 1px solid black; */
         background-color: #fff;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     }
@@ -321,7 +313,6 @@ footer{
         
     }
     .bottom-title>p{
-        /* margin-top: -120px; */
         font-size: 1rem;
         color: gray;
         line-height: 25px;
@@ -355,18 +346,15 @@ footer{
 
     }
     .icons{
-        /* margin-top: -80px; */
         margin-left: 80px;
-        /* padding-left:60px; */
         margin-bottom: 80px;
         
     }
     
 } 
 
-/* media query for mobile*/
+/* media query for mobile screen >= 480 px*/
 
-/* screen 480px */
 @media only screen and (max-width: 480px) {
 
 /* common styles  */
@@ -375,7 +363,7 @@ footer{
         overflow-x: hidden;
     }
 
-    /* head and nav  */
+    /* header and navigation  */
     .header{
         height: 695px;
         
@@ -399,7 +387,7 @@ footer{
         margin-right: 20px;
     }
     
-    /* copa America styles */
+    /* main container styles */
     .copa-image{
         display: flex;
         flex-direction: column;
@@ -436,16 +424,15 @@ footer{
     }
     /* player styles */
     .container{
-        margin:47px ;
+     width: 100% ;
         
     }
     .players{
         display: grid;
         margin-left: -38%;
-        grid-template-columns: repeat(1,0.3fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 24px;
         
-        /* grid-column-gap: px; */
     }
     
     /* bottom parts */
@@ -464,7 +451,6 @@ footer{
         
     }
     .bottom-title>p{
-        /* margin-top: -120px; */
         font-size: 1rem;
         color: gray;
         line-height: 25px;
@@ -482,6 +468,7 @@ footer{
     }
 
     /* bonus parts */
+
     #offical-song{
         display: none;
     }
