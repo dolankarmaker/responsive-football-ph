@@ -460,13 +460,15 @@ footer{
         font-size: 1rem;
         line-height: 15px;
         margin-left: 5px;
-        
+        font-size: medium;
+        font-weight: bold;
     }
     .bottom-title>p{
         font-size: 1rem;
         color: gray;
         line-height: 25px;
         margin-right:1px;
+        font-size: small;
         
     }
     
